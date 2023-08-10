@@ -10,6 +10,7 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -54,7 +55,7 @@ img {
     justify-content: space-between;
     align-items: left;
     position: relative;
-    z-index: 0;    
+    z-index: 100;    
     background-color: #3C400D;
     box-sizing: border-box;
     box-shadow: 0 0 10px #3C400D;
@@ -190,10 +191,10 @@ nav ul {
     text-align: left;
     font-size: 50px;
     font-family: 'Garamond';
-    z-index: -1;
+    z-index: 0;
 }
 
-.banner-text h3 {
+.banner_text h3 {
     font-size: 90px;
     padding-top: 300px;
     margin-left: 90px;
@@ -201,7 +202,7 @@ nav ul {
     color: #F2EDD5;
 }
 
-.banner #btn{
+#btn {
     width: 200px;
     height: 45px;
     font-weight: bold;
@@ -213,11 +214,47 @@ nav ul {
     border-radius: 20px;
     border: none;
     cursor: pointer;
-    z-index: 10;
+    z-index: 20;
     }
+
+#btn a {
+    text-decoration: none;
+    color: #000;
+}
 
 .banner #btn:hover{
     background-color: #F2EDD5;
+}
+
+@media (max-width: 992px) {
+    .banner_text {
+        padding: auto 0;
+        margin: auto 0;
+    }
+
+    .banner_text h3 {
+        text-align: center;
+        padding: auto 0;
+        margin: auto 0;
+    }
+
+    .banner #btn {
+        display: flex;
+        margin: 20px auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 45px;
+        font-weight: bold;
+        font-size: 20px;
+        background-color: #BDBF6F;
+        letter-spacing: 3px;
+        color: #000;
+        border-radius: 20px;
+        border: none;
+        z-index: 10;
+    }
 }
 
 /*VERTICAL NAV*/
@@ -306,6 +343,7 @@ nav ul {
 }
 
 .cate_books .book_box .book_card .book_tag h2{
+    font-size: 21px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     margin: 12px;
@@ -373,9 +411,31 @@ nav ul {
     }
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1448px) {
     .cate_books .book_box {
       flex-wrap: wrap;
+    }
+
+    .cate_books .book_box .book_card {
+        width: 40%;
+        margin: 10px 30px;
+  }
+
+    .cate_books .book_box .book_card .book_img img{
+        width: 98%;
+        height: 25rem;
+}
+
+}
+
+@media (min-width: 1448px) and (max-width: 1640px) {
+    .cate_books .book_box .book_card .book_tag h2 {
+        font-size: 20px;
+    }
+
+    .cate_books .book_box .book_card {
+        width: 40%;
+        margin: 10px 10px;
     }
 }
 
@@ -542,7 +602,7 @@ nav ul {
     align-items: center;
 }
 
-.books .book_box .book_card{
+.books .book_box .book_card {
     display: flex;
     flex-direction: column;
     width: 12%;
@@ -554,16 +614,16 @@ nav ul {
     background-color: #F2EDD5;
 }
 
-.books .book_box .book_card:hover{
+.books .book_box .book_card:hover {
     box-shadow: 0 0 8px #3C400D;
 }
 
-.books .book_box .book_card .book_img img{
+.books .book_box .book_card .book_img img {
     width: 98%;
     height: 24rem;
 }
 
-.books .book_box .book_card .book_tag h2{
+.books .book_box .book_card .book_tag h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     margin: 12px;
@@ -613,25 +673,25 @@ nav ul {
 }
 
 @media (min-width: 1920px) {
-    .books .book_box .book_card{
+    .books .book_box .book_card {
         display: flex;
         flex-direction: column;
         width: 12%;
-        height: 45rem;
+        height: 40rem;
         text-align: center;
         padding: 4px;
         border: 3px solid #BFBD99;
         /* margin: 10px 20px; */
         background-color: #F2EDD5;
-    }
-    
+    }    
+
     .books .book_box .book_card .book_img img{
         width: 97%;
         height: 29rem;
     }
 }
 
-@media (max-width: 1580px) {
+@media (max-width: 1448px) {
     .books .book_box {
       flex-wrap: wrap;
     }
@@ -645,6 +705,17 @@ nav ul {
     .books .book_box .book_card .book_img img{
     width: 98%;
     height: 25rem;
+}
+
+@media (min-width: 1448px) and (max-width: 1640px) {
+    .books .book_box .book_card .book_tag h2 {
+        font-size: 20px;
+    }
+
+    .books .book_box .book_card {
+        width: 40%;
+        margin: 10px 10px;
+    }
 }
 
   /* @media (max-width: 1580px) {

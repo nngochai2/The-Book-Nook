@@ -1,0 +1,130 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assestment: Assignment 1
+    Author: Nguyen Ngoc Hai
+    ID: s3978281
+    Acknowledgement: 
+-->
+
+<!DOCTYPE html>
+<html>
+<!--This is the homepage-->
+<head>
+    <meta charset="utf-8">
+    <title>The Book Nook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBOVD591QIYicR65iaqukzvf/nwas FØnqhPay5w/91JmVM2hMDcnK10nMGCdVK+iQrJ71zPJQd1w=="I crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <input type="checkbox" id="check">
+                <ul class="rsps_menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="nonfiction.html">Non-fiction</a></li>      
+                    <li><label for="check" class="close_menu"><i class="fas fa-times"></i></label></li>            
+                </ul>
+                <label for="check" class="open_menu"><i class="fas fa-bars" style="color: #F2EDD5;"></i></label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <ol class="bread_crumb">
+            <li><a href="index.html"><b>Home</b></a> <span class="separator"></span></li>
+            <li><a href="nonfiction.html"><b>Non - Fiction</b></a> <span class="separator"></span></li>
+            <li><a href="world_travel.html" class="active"><b>World Travel: An Irreverent Guide</b></a></li>
+        </ol>
+
+        <section>
+            <div class="top_section">
+                <img src="https://m.media-amazon.com/images/I/51DZ9FcZqFS._SX329_BO1,204,203,200_.jpg" alt="World Travel: An Irreverent Guide" class="main_img">
+                <div class="side_imgs">
+                    <img src="https://m.media-amazon.com/images/I/81WYuUjHdBL.jpg" alt="pic_1">
+                    <img src="https://m.media-amazon.com/images/I/81SghPJ6ppL.jpg" alt="pic_2">
+                    <img src="https://m.media-amazon.com/images/I/91oSRGP1yGL.jpg" alt="pic_3">
+                </div>
+
+                <div class="side_info">
+                    <div class="book_price">
+                        <h1>$19.60</h1>
+                    </div>
+                    <div class="add_to_cart">
+                        <a href="#" type="button"><i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+                    </div>
+                    <div class="add_to_favorite">
+                        <a href="#" type="button"><i class="fa-solid fa-heart"></i> Add to favorite</a>
+                    </div>
+                </div>                    
+            </div>
+ 
+
+            <div class="book_description">
+                <h1>World Travel: An Irreverent Guide</h1>
+                <h2>Author: Anthony Bourdain</h2>
+                <hr>                 
+                <p>
+                    Anthony Bourdain saw more of the world than nearly anyone. His travels took him from the hidden pockets of his hometown of New York to a tribal longhouse in Borneo, from cosmopolitan Buenos Aires, Paris, and Shanghai to Tanzania’s utter beauty and the stunning desert solitude of Oman’s Empty Quarter—and many places beyond.
+                    <br>
+                    In World Travel, a life of experience is collected into an entertaining, practical, fun and frank travel guide that gives readers an introduction to some of his favorite places—in his own words. Featuring essential advice on how to get there, what to eat, where to stay and, in some cases, what to avoid, World Travel provides essential context that will help readers further appreciate the reasons why Bourdain found a place enchanting and memorable.
+                </p>
+            </div>
+        </section>
+        <hr>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="inner_footer">
+                <img src="images/logo.png">
+
+                <div class="footer_third">
+                    <h4>Need help?</h4>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a> 
+                </div>
+
+                <div class="footer_third">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.facebook.com/hai.nguyenngoc.5201254" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/_hai.html_/" target="_blank">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Hotline: +84 37 412 9360</a>
+                </div>
+
+                <div class="footer_third">
+                    <h4>Jump back to:</h4>
+                    <div class="footer_nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-fiction</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

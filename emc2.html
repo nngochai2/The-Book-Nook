@@ -1,0 +1,132 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assestment: Assignment 1
+    Author: Nguyen Ngoc Hai
+    ID: s3978281
+    Acknowledgement: 
+-->
+
+<!DOCTYPE html>
+<html>
+<!--This is the homepage-->
+<head>
+    <meta charset="utf-8">
+    <title>The Book Nook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBOVD591QIYicR65iaqukzvf/nwas FØnqhPay5w/91JmVM2hMDcnK10nMGCdVK+iQrJ71zPJQd1w=="I crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <input type="checkbox" id="check">
+                <ul class="rsps_menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="nonfiction.html">Non-fiction</a></li>      
+                    <li><label for="check" class="close_menu"><i class="fas fa-times"></i></label></li>            
+                </ul>
+                <label for="check" class="open_menu"><i class="fas fa-bars" style="color: #F2EDD5;"></i></label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <ol class="bread_crumb">
+            <li><a href="index.html"><b>Home</b></a> <span class="separator"></span></li>
+            <li><a href="nonfiction.html"><b>Non - Fiction</b></a> <span class="separator"></span></li>
+            <li><a href="emc2.html" class="active"><b>Einstein: His Life and Universe</b></a></li>
+        </ol>
+
+        <section>
+            <div class="top_section">
+                <img src="https://m.media-amazon.com/images/I/51VEeZWAo-L.jpg" alt="Einstein: His Life and Universe" class="main_img">
+                <div class="side_imgs">
+                    <img src="https://d1b14unh5d6w7g.cloudfront.net/0743264746.01.S002.JUMBOXXX.jpg?Expires=1691767170&Signature=Mx4gTAZ34~qwMvRRHC~Ef~Wl4oPhovinnJj~-gHR9qRtkQ5ApjlhoqAQtL~-aWFXN2MqzgchkuGf8WmUU7yNQgDhliRKva-HXzJRosF8Jm9KD~6f3ZiuOKIdElUaw6R81ba-s42qHMa93rjElG8qjqwCLbFylq8~Q-8IZYPY0u0_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="pic_1">
+                    <img src="https://d1b14unh5d6w7g.cloudfront.net/0743264746.01.S003.JUMBOXXX.jpg?Expires=1691767171&Signature=VQAtJFWrKupbF-hU~C6rg16qm5eotRjnNxKsmz5DBhMBtngr9tqGXCVwIfMwH6zRiHHYbTcNYPZc1unuBGrEY4YyCBxfNCWI7hkZG2vgLfCGZaUOA8tTSgUSrIVMoaQlMcqa6ENz73LOnEt-W1Dh4oEwnufTOksejOzEuDZq0t8_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="pic_2">
+                    <img src="https://d1b14unh5d6w7g.cloudfront.net/0743264746.01.S004.JUMBOXXX.jpg?Expires=1691767173&Signature=WNxbcBNKv6ppZHgucDFoVh9EGsw9vHi0XIFOUlDUeO5pEc~ejCYmqzHTAB~ZUdq0o5f~k9DapG30JIXgsLHoJ57~kg4nhfbOmNPpWxrgygQ8-6dQO9nwcHNJw8Fb5CH14LVA3w0Oc71q4JkXFAIrg~ywn6IZzNJg6O7DwD-9840_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="pic_3">
+                </div>
+
+                <div class="side_info">
+                    <div class="book_price">
+                        <h1>$12.69</h1>
+                    </div>
+                    <div class="add_to_cart">
+                        <a href="#" type="button"><i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+                    </div>
+                    <div class="add_to_favorite">
+                        <a href="#" type="button"><i class="fa-solid fa-heart"></i> Add to favorite</a>
+                    </div>
+                </div>                    
+            </div>
+ 
+
+            <div class="book_description">
+                <h1>Einstein: His Life and Universe</h1>
+                <h2>Author: Walter Isaacson</h2>
+                <hr>                 
+                <p>
+                    How did his mind work? What made him a genius? Isaacson’s biography shows how his scientific imagination sprang from the rebellious nature of his personality. His fascinating story is a testament to the connection between creativity and freedom.
+                    <br>
+                    Based on newly released personal letters of Einstein, this book explores how an imaginative, impertinent patent clerk—a struggling father in a difficult marriage who couldn’t get a teaching job or a doctorate—became the mind reader of the creator of the cosmos, the locksmith of the mysteries of the atom, and the universe. His success came from questioning conventional wisdom and marveling at mysteries that struck others as mundane. This led him to embrace a morality and politics based on respect for free minds, free spirits, and free individuals.
+                    <br>
+                    These traits are just as vital for this new century of globalization, in which our success will depend on our creativity, as they were for the beginning of the last century, when Einstein helped usher in the modern age.
+                </p>
+            </div>
+        </section>
+        <hr>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="inner_footer">
+                <img src="images/logo.png">
+
+                <div class="footer_third">
+                    <h4>Need help?</h4>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a> 
+                </div>
+
+                <div class="footer_third">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.facebook.com/hai.nguyenngoc.5201254" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/_hai.html_/" target="_blank">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Hotline: +84 37 412 9360</a>
+                </div>
+
+                <div class="footer_third">
+                    <h4>Jump back to:</h4>
+                    <div class="footer_nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-fiction</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

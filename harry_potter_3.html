@@ -1,0 +1,252 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assestment: Assignment 1
+    Author: Nguyen Ngoc Hai
+    ID: s3978281
+    Acknowledgement: 
+-->
+
+<!DOCTYPE html>
+<html>
+<!--This is the homepage-->
+<head>
+    <meta charset="utf-8">
+    <title>The Book Nook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBOVD591QIYicR65iaqukzvf/nwas FØnqhPay5w/91JmVM2hMDcnK10nMGCdVK+iQrJ71zPJQd1w=="I crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <input type="checkbox" id="check">
+                <ul class="rsps_menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="nonfiction.html">Non-fiction</a></li>      
+                    <li><label for="check" class="close_menu"><i class="fas fa-times"></i></label></li>            
+                </ul>
+                <label for="check" class="open_menu"><i class="fas fa-bars" style="color: #F2EDD5;"></i></label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <ol class="bread_crumb">
+            <li><a href="index.html"><b>Home</b></a> <span class="separator"></span></li>
+            <li><a href="fiction.html"><b>Fiction</b></a> <span class="separator"></span></li>
+            <li><a href="harry_potter_3.html" class="active"><b>Harry Potter and the Prisoner of Azkaban</b></a></li>
+        </ol>
+
+        <section>
+            <div class="top_section">
+                <img src="https://m.media-amazon.com/images/I/81lAPl9Fl0L.jpg" alt="harry_potter_3" class="main_img">
+                <div class="side_imgs">
+                    <img src="https://d1b14unh5d6w7g.cloudfront.net/1408855674.01.S001.LXXXXXXX.jpg?Expires=1691750468&Signature=ZHqnNh5i5maUnHFOJqpxXhDAhSzXo9JxiHT3IGEHfBfvLErOVkmcldhzPkczr9Hln9joCsRLdd8m57oKdi6AMXf-JX8guTRTlPlR8bA7HWIGKU3TxnbDCFsl0MPIzALW3f5S0HqL~Ld8rBCaxVct1zzUccbRVEYV41KOGwi3Gss_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="pic_1">
+                    <img src="https://m.media-amazon.com/images/I/814bbGKEiML.jpg" alt="pic_2">
+                    <img src="https://m.media-amazon.com/images/I/310BcUXm1jL.jpg" alt="pic_3">
+                </div>
+
+                <div class="side_info">
+                    <div class="book_price">
+                        <h1>$15.74</h1>
+                    </div>
+                    <div class="add_to_cart">
+                        <a href="#" type="button"><i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+                    </div>
+                    <div class="add_to_favorite">
+                        <a href="#" type="button"><i class="fa-solid fa-heart"></i> Add to favorite</a>
+                    </div>
+                </div>                    
+            </div>
+ 
+
+            <div class="book_description">
+                <h1>Harry Potter and the Prisoner of Azkaban</h1>
+                <h2>Author: J.K. Rowling</h2>
+                <hr>                 
+                <p>
+                    For twelve long years, the dread fortress of Azkaban held an infamous prisoner named Sirius Black. Convicted of killing thirteen people with a single curse, he was said to be the heir apparent to the Dark Lord, Voldemort.Now he has escaped, leaving only two clues as to where he might be headed: Harry Potter's defeat of You-Know-Who was Black's downfall as well. And the Azkaban guards heard Black muttering in his sleep, "He's at Hogwarts . . . he's at Hogwarts."Harry Potter isn't safe, not even within the walls of his magical school, surrounded by his friends. Because on top of it all, there may well be a traitor in their midst.
+                </p>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h1>Movie Adaptation</h1>
+            <iframe class="center" width="700" height="500" src="https://www.youtube.com/embed/1ZdlAg3j8nI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <hr>
+        
+        <section>
+            <h1>Enjoy the full Harry Potter series!</h1>
+            <div class="featured_books">
+                <div class="featured_book_box">
+    
+                    <div class="featured_book_card">
+    
+                        <div class="featured_book_img">
+                            <img src="https://m.media-amazon.com/images/I/71-++hbbERL._AC_SY879_.jpg" alt="Harry Potter 1">
+                        </div>
+    
+                        <div class="featured_book_tag">
+                            <h2>Harry Potter and the Sorcerer's Stone</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$15.98</p>
+                            <a href="harry_potter_1.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="featured_book_card">
+    
+                        <div class="featured_book_img">
+                            <img src="https://m.media-amazon.com/images/I/51auVPOrgTL._SX342_BO1,204,203,200_.jpg" alt="Harry Potter 2">
+                        </div>
+    
+                        <div class="featured_book_tag">
+                            <h2 style="font-size: 22px;">Harry Potter and the Chamber of Secrets</h2>
+                            <p class="writer" style="padding-top: 3.5px;">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$21.41</p>
+                            <a href="harry_potter_2.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>    
+                    <div class="featured_book_card">
+    
+                        <div class="featured_book_img">
+                            <img src="https://m.media-amazon.com/images/I/51-rbiAIiRL._SX341_BO1,204,203,200_.jpg" alt="Harry Potter 3">
+                        </div>
+    
+                        <div class="featured_book_tag">
+                            <h2>Harry Potter and the Prisoner of Azkaban</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy, Horror</div>
+                            <p class="book_price">$15.74</p>
+                            <a href="#" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+                    
+                    <div class="featured_book_card">
+    
+                        <div class="featured_book_img">
+                            <img src="https://m.media-amazon.com/images/I/516c41oodRL._SX437_BO1,204,203,200_.jpg" alt="Harry Potter 5">
+                        </div>
+    
+                        <div class="featured_book_tag">
+                            <h2>Harry Potter and the Order of the Phoenix</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$15.50</p>
+                            <a href="#" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="featured_book_card">
+    
+                        <div class="featured_book_img">
+                            <img src="https://m.media-amazon.com/images/I/51uO1pQc5oL._SX329_BO1,204,203,200_.jpg" alt="Harry Potter 6">
+                        </div>
+    
+                        <div class="featured_book_tag">
+                            <h2>Harry Potter and the Half-Blood Prince</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$16.79</p>
+                            <a href="#" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+
+                    <div class="featured_book_card">
+    
+                        <div class="featured_book_img">
+                            <img src="https://m.media-amazon.com/images/I/61yMjtQzKcL.jpg" alt="Harry Potter 7">
+                        </div>
+    
+                        <div class="featured_book_tag">
+                            <h2>Harry Potter and the Deathly Hallows</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$11.49</p>
+                            <a href="#" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+
+    
+                    <div class="featured_book_card">
+    
+                        <div class="featured_book_img">
+                            <img src="https://m.media-amazon.com/images/I/51L7pTOL+KL._SX419_BO1,204,203,200_.jpg" alt="Harry Pottter 2 Speacial">
+                        </div>
+    
+                        <div class="featured_book_tag">
+                            <h2>Harry Potter 2: The Illustrated Edition</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$23.63</p>
+                            <a href="#" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="inner_footer">
+                <img src="images/logo.png">
+
+                <div class="footer_third">
+                    <h4>Need help?</h4>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a> 
+                </div>
+
+                <div class="footer_third">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.facebook.com/hai.nguyenngoc.5201254" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/_hai.html_/" target="_blank">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Hotline: +84 37 412 9360</a>
+                </div>
+
+                <div class="footer_third">
+                    <h4>Jump back to:</h4>
+                    <div class="footer_nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-fiction</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

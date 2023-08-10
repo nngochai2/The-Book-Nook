@@ -1,0 +1,317 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assestment: Assignment 1
+    Author: Nguyen Ngoc Hai
+    ID: s3978281
+    Acknowledgement: 
+-->
+
+<!DOCTYPE html>
+<html>
+<!--This is the homepage-->
+<head>
+    <meta charset="utf-8">
+    <title>The Book Nook</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBOVD591QIYicR65iaqukzvf/nwas FØnqhPay5w/91JmVM2hMDcnK10nMGCdVK+iQrJ71zPJQd1w=="I crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <input type="checkbox" id="check">
+                <ul class="rsps_menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="nonfiction.html">Non-fiction</a></li>        
+                    <li><label for="check" class="close_menu"><i class="fas fa-times"></i></label></li>            
+                </ul>
+                <label for="check" class="open_menu"><i class="fas fa-bars" style="color: #F2EDD5;"></i></label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="vertical_nav">
+            <ul>
+                <h2><b>Category</b></h2>
+                <li><a href="#Biography">Biography</a></li>
+                <li><a href="#Travel">Travel</a></li>
+                <li><a href="#Art">Art</a></li>
+            </ul>
+        </div>
+
+        <section>
+            <div class="cate_books" style="padding-bottom: 0;">
+
+                <h1 id="Biography">Biography</h1>
+    
+                <div class="book_box">
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51ZOvw+oHFL._SX320_BO1,204,203,200_.jpg" alt="Zlatan">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>I'm Zlatan: My Story On & Off The Field</h2>
+                            <p class="writer">- Zlatan Ibrahimovic -</p>
+                            <div class="categories">Autobiography</div>
+                            <p class="book_price">$19.00</p>
+                            <a href="zlatan.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class=" book_img">
+                            <img src="https://m.media-amazon.com/images/I/51x6TBEfl-L._SX331_BO1,204,203,200_.jpg" alt="JFK and the Unspeakable">
+                        </div>
+    
+                        <div class=" book_tag">
+                            <h2>J.F. Kenedy and the Unspeakable</h2>
+                            <p class="writer">- James W. Doughlass -</p>
+                            <div class="categories">Biography</div>
+                            <p class="book_price">$18.50</p>
+                            <a href="jfk.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51aQOSZp3xL._SX334_BO1,204,203,200_.jpg" alt="Harry Potter 5">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>A. Einstein: His Life and Universe</h2>
+                            <p class="writer">- Walter Isaacson -</p>
+                            <div class="categories">Biography</div>
+                            <p class="book_price">$12.69</p>
+                            <a href="emc2.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://d1b14unh5d6w7g.cloudfront.net/0593566718.01.S001.LXXXXXXX.jpg?Expires=1691686263&Signature=Gmi~llFeCUOwp1TBI6n54Zv1NWp-~cVzg4rPeMT5L~b1Gtkt7NqU3RVmlIpRJUHw2qzsRyk99exrCDGVoBzDEgKi6XFEpDoOP8oea2AGYLQbr~K3lgznGpHdlWBW4l0CFzQb3eQqvpaBEOGkRjuUamc8Bx~LqznyWPBZVaiue0g_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="Taylor Swift">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Taylor Swift: A Little Golden Biography</h2>
+                            <p class="writer">- Wendy Loggia -</p>
+                            <div class="categories">Biography</div>
+                            <p class="book_price">$4.78</p>
+                            <a href="taylor.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+            </div>
+    
+        </section>
+
+        <section>
+           <div class="cate_books">
+
+                <h1 id="Travel">Travel</h1>
+    
+                <div class="book_box">
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/61DQw411nRL._SX399_BO1,204,203,200_.jpg" alt="Destinations of a Lifetime: Top 225">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Destinations of a Lifetime: Top 225</h2>
+                            <p class="writer">- National Geographic -</p>
+                            <div class="categories">Travel</div>
+                            <p class="book_price">$23.25</p>
+                            <a href="destinations_of_a_life_time.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class=" book_img">
+                            <img src="https://d1b14unh5d6w7g.cloudfront.net/0789332698.01.S001.LXXXXXXX.jpg?Expires=1691686851&Signature=Z9a7~zghgmjNo5YpjYTrwOusXnq64BUb-tyrEx2h4KJ3wz9JcP9dU22yuYgN8vZx3BjRcHuvaAkM3AYP729sCCfNcHBJx1ESl~UifHCRCtuP6nwPJPs8u5M1w6EWiKrmVvhdN5wetj8z0BK9T0Hi1RQ0sAh1wPfyLr3HsNpMFBM_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="The Bucket List: 1000 Adventures">
+                        </div>
+    
+                        <div class=" book_tag">
+                            <h2>The Bucket List: 1000 Adventures</h2>
+                            <p class="writer">- Kath Stathers -</p>
+                            <div class="categories">Travel</div>
+                            <p class="book_price">$19.89</p>
+                            <a href="the_bucket_list.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/510QV8Kbj7L._SX329_BO1,204,203,200_.jpg" alt="Harry Potter 5">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>World Travel: An Irreverent Guide</h2>
+                            <p class="writer">- Anthony Bourdain -</p>
+                            <div class="categories">Travel</div>
+                            <p class="book_price">$19.60</p>
+                            <a href="world_travel.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51iZkErM6aL._SX419_BO1,204,203,200_.jpg" alt="The Travel Book: A Journey Through Every Country in the World">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>UJ: Slow Down and See the World</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$16.79</p>
+                            <a href="uj.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+            </div>
+            
+        </section>
+
+        <section>
+            <div class="cate_books">
+
+                <h1 id="Art">Art and Photography</h1>
+    
+                <div class="book_box">
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/519jOJFH94L._SX483_BO1,204,203,200_.jpg" alt="The Art of Photography: A Personal Approach">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>The Art of Photography: A Personal Approach</h2>
+                            <p class="writer">- Bruce Barnbaum -</p>
+                            <div class="categories">Art & Photography</div>
+                            <p class="book_price">$28.99</p>
+                            <a href="the_art_of_photgraphy.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class=" book_img">
+                            <img src="https://m.media-amazon.com/images/I/51x6jwwK9aL._SX481_BO1,204,203,200_.jpg" alt="Harry Potter 3">
+                        </div>
+    
+                        <div class=" book_tag">
+                            <h2>Photography and the Art of Seeing</h2>
+                            <p class="writer">- Freeman Patterson -</p>
+                            <div class="categories">Art & Photography</div>
+                            <p class="book_price">$24.95</p>
+                            <a href="photography_and_the_art.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51yhuw86FaL._SX381_BO1,204,203,200_.jpg" alt="The Mixed Media Photography Book">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>The Mixed Media Photography Book</h2>
+                            <p class="writer">- Nitsa Malik -</p>
+                            <div class="categories">Art & Photography</div>
+                            <p class="book_price">$41.09</p>
+                            <a href="the_mixed_media.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51wZzj0VlUL._SX384_BO1,204,203,200_.jpg" alt="The NEW Mixed Media Photography Book">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>The NEW Mixed Media Photography Book</h2>
+                            <p class="writer">- Nitsa Malik -</p>
+                            <div class="categories">Art & Photography</div>
+                            <p class="book_price">$33.21</p>
+                            <a href="the_new_mixed_media.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="inner_footer">
+                <img src="images/logo.png">
+
+                <div class="footer_third">
+                    <h4>Need help?</h4>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a> 
+                </div>
+
+                <div class="footer_third">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.facebook.com/hai.nguyenngoc.5201254" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/_hai.html_/" target="_blank">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Hotline: +84 37 412 9360</a>
+                </div>
+
+                <div class="footer_third">
+                    <h4>Jump back to:</h4>
+                    <div class="footer_nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-fiction</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>

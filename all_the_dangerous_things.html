@@ -1,0 +1,138 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assestment: Assignment 1
+    Author: Nguyen Ngoc Hai
+    ID: s3978281
+    Acknowledgement: 
+-->
+
+<!DOCTYPE html>
+<html>
+<!--This is the homepage-->
+<head>
+    <meta charset="utf-8">
+    <title>The Book Nook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBOVD591QIYicR65iaqukzvf/nwas FØnqhPay5w/91JmVM2hMDcnK10nMGCdVK+iQrJ71zPJQd1w=="I crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <input type="checkbox" id="check">
+                <ul class="rsps_menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="nonfiction.html">Non-fiction</a></li>      
+                    <li><label for="check" class="close_menu"><i class="fas fa-times"></i></label></li>            
+                </ul>
+                <label for="check" class="open_menu"><i class="fas fa-bars" style="color: #F2EDD5;"></i></label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <ol class="bread_crumb">
+            <li><a href="index.html"><b>Home</b></a> <span class="separator"></span></li>
+            <li><a href="fiction.html"><b>Fiction</b></a> <span class="separator"></span></li>
+            <li><a href="all_the_dangerous_things.html" class="active"><b>All the Dangerous Things: A Novel</b></a></li>
+        </ol>
+
+        <section>
+            <div class="top_section">
+                <img src="https://d1b14unh5d6w7g.cloudfront.net/1250803853.01.S001.LXXXXXXX.jpg?Expires=1691753075&Signature=Whe~koSw58UAVIHCiuGfCuBMtBe4YIrlq7GvDY~FTvviICOidc4RebTg3b9G6jinmz1yFzAqG1NSi289JbDLNCtxKaWtCZL-~pSADIWcjzVcywvgpRquDtPph65UpqSd5M2ppSDkQwF-958GN8WlXCrscfF6V2O1i0A4yVSormQ_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="All the Dangerous Things: A Novel" class="main_img">
+                <div class="side_imgs">
+                    <img src="https://d1b14unh5d6w7g.cloudfront.net/1250803853.01.S001.LXXXXXXX.jpg?Expires=1691753075&Signature=Whe~koSw58UAVIHCiuGfCuBMtBe4YIrlq7GvDY~FTvviICOidc4RebTg3b9G6jinmz1yFzAqG1NSi289JbDLNCtxKaWtCZL-~pSADIWcjzVcywvgpRquDtPph65UpqSd5M2ppSDkQwF-958GN8WlXCrscfF6V2O1i0A4yVSormQ_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="pic_1">
+                    <img src="https://d1b14unh5d6w7g.cloudfront.net/1250803853.01.S002.JUMBOXXX.jpg?Expires=1691753076&Signature=WK~aY476ms8zRbaGtSP4QItBY96VSYfMKzmcJajNOUVhjcBxaOGTUxjuuMF9KKIGwMItx0R6q8TQwYirp~Qv3AhARWrPZ14Yl5fNVsXGDctaHDdjZVehhc~35D8YvuiAiuKeqHZtPtyRIsKmuPs8aaXshFlhu7Yq7d7aPGRSKkY_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="pic_2">
+                    <img src="https://d1b14unh5d6w7g.cloudfront.net/1250803853.01.S003.JUMBOXXX.jpg?Expires=1691753077&Signature=YNnxjl6Uk07CCP3WyaJ2PIDQjmI0wY2DGMrSzSKXVeG~9-X9rUk89VpE1dCYFeaUtyhrFCw-CXMJI7RXbujY1VwT3URbTfrMDLmGzYO2~61G0Fx18UbB6eLenpTHBVOelLYe82wBI2uzJJR2LqxylS2TLSL7BK9HebSIrwJBw54_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="pic_3">
+                </div>
+
+                <div class="side_info">
+                    <div class="book_price">
+                        <h1>$14.97</h1>
+                    </div>
+                    <div class="add_to_cart">
+                        <a href="#" type="button"><i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+                    </div>
+                    <div class="add_to_favorite">
+                        <a href="#" type="button"><i class="fa-solid fa-heart"></i> Add to favorite</a>
+                    </div>
+                </div>                    
+            </div>
+ 
+
+            <div class="book_description">
+                <h1>All the Dangerous Things: A Novel</h1>
+                <h2>Author: Stacy Willingham</h2>
+                <hr>                 
+                <p>
+                    One year ago, Isabelle Drake's life changed forever: her toddler son, Mason, was taken out of his crib in the middle of the night while she and her husband were asleep in the next room. With little evidence and few leads for the police to chase, the case quickly went cold. However, Isabelle cannot rest until Mason is returned to her―literally.
+
+Except for the occasional catnap or small blackout where she loses track of time, she hasn’t slept in a year.
+
+Isabelle's entire existence now revolves around finding him, but she knows she can’t go on this way forever. In hopes of jarring loose a new witness or buried clue, she agrees to be interviewed by a true-crime podcaster―but his interest in Isabelle's past makes her nervous. His incessant questioning paired with her severe insomnia has brought up uncomfortable memories from her own childhood, making Isabelle start to doubt her recollection of the night of Mason’s disappearance, as well as second-guess who she can trust... including herself. But she is determined to figure out the truth no matter where it leads.
+                </p>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h1>Book Review</h1>
+            <iframe class="center" width="700" height="500" src="https://www.youtube.com/embed/QrtFw8iuiO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <hr>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="inner_footer">
+                <img src="images/logo.png">
+
+                <div class="footer_third">
+                    <h4>Need help?</h4>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a> 
+                </div>
+
+                <div class="footer_third">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.facebook.com/hai.nguyenngoc.5201254" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/_hai.html_/" target="_blank">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Hotline: +84 37 412 9360</a>
+                </div>
+
+                <div class="footer_third">
+                    <h4>Jump back to:</h4>
+                    <div class="footer_nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-fiction</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

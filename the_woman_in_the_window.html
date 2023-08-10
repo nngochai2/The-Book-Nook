@@ -1,0 +1,138 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assestment: Assignment 1
+    Author: Nguyen Ngoc Hai
+    ID: s3978281
+    Acknowledgement: 
+-->
+
+<!DOCTYPE html>
+<html>
+<!--This is the homepage-->
+<head>
+    <meta charset="utf-8">
+    <title>The Book Nook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBOVD591QIYicR65iaqukzvf/nwas FØnqhPay5w/91JmVM2hMDcnK10nMGCdVK+iQrJ71zPJQd1w=="I crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <input type="checkbox" id="check">
+                <ul class="rsps_menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="nonfiction.html">Non-fiction</a></li>      
+                    <li><label for="check" class="close_menu"><i class="fas fa-times"></i></label></li>            
+                </ul>
+                <label for="check" class="open_menu"><i class="fas fa-bars" style="color: #F2EDD5;"></i></label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <ol class="bread_crumb">
+            <li><a href="index.html"><b>Home</b></a> <span class="separator"></span></li>
+            <li><a href="fiction.html"><b>Fiction</b></a> <span class="separator"></span></li>
+            <li><a href="the_woman_in_the_window.html" class="active"><b>The Woman in the Window: A Novel</b></a></li>
+        </ol>
+
+        <section>
+            <div class="top_section">
+                <img src="https://m.media-amazon.com/images/I/51oZ4pGUvXL.jpg" alt="The Woman in the Window: A Novel" class="main_img">
+                <div class="side_imgs">
+                    <img src="https://d1b14unh5d6w7g.cloudfront.net/0062678418.01.S001.LXXXXXXX.jpg?Expires=1691752710&Signature=frs~wK2atblL4TRtsUP~KuQ0mZhmKatSsA-zHU0cTaodmP56UAya3w0JdkJwa9QJ0bAMxvet93UUDcrnUXwnCHgb8v76LHHZf71SZ3cGfiaxlvZp30Lzs0Ejhtj6dtbS1grPbSRwXFCm4qLmuCljxB43bkVxCuakLHFKlEKOPKY_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="pic_1">
+                    <img src="https://d1b14unh5d6w7g.cloudfront.net/0062678418.01.S002.LXXXXXXX.jpg?Expires=1691752710&Signature=QNOHoHmYItfELlw54wSQ7HaD31-5c4jJRgmHPZnsQnYQ6wGxkbKt1JQa1ZI-MH4-JwO9JMCrE3HXL~osE104vCIiQp7UcZNEOWnMAZnQ3N9WkJWDvO-1dEG~V35sBEm9H9aF1cQz7Ndph2Qis6xAufcrWSBXpm3U6-FELr-V-M8_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="pic_2">
+                    <img src="https://d1b14unh5d6w7g.cloudfront.net/0062678418.01.S007.JUMBOXXX.jpg?Expires=1691752731&Signature=Y9wku9zw4eKupuh~flhIsGu0NtZsl6JxHiv0udsIKLsfk4azvv629elBk-IioILWJYz5dA9pwTTVCbC5aW7-a7m6ur0UhT6OGCwoPdyULFoVv8L~ePve7tfVTOnwPLcFcUul3x-aULUyczEaVMqF0eFhW6oji-9ybPyv5YOMoZY_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="pic_3">
+                </div>
+
+                <div class="side_info">
+                    <div class="book_price">
+                        <h1>$14.10</h1>
+                    </div>
+                    <div class="add_to_cart">
+                        <a href="#" type="button"><i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+                    </div>
+                    <div class="add_to_favorite">
+                        <a href="#" type="button"><i class="fa-solid fa-heart"></i> Add to favorite</a>
+                    </div>
+                </div>                    
+            </div>
+ 
+
+            <div class="book_description">
+                <h1>The Woman in the Window: A Novel</h1>
+                <h2>Author: A. J. Finn</h2>
+                <hr>                 
+                <p>
+                    Anna Fox lives alone—a recluse in her New York City home, unable to venture outside. She spends her day drinking wine (maybe too much), watching old movies, recalling happier times . . . and spying on her neighbors.
+                    <br>
+                    Then the Russells move into the house across the way: a father, a mother, their teenage son. The perfect family. But when Anna, gazing out her window one night, sees something she shouldn’t, her world begins to crumble—and its shocking secrets are laid bare.
+                    <br>
+                    What is real? What is imagined? Who is in danger? Who is in control? In this diabolically gripping thriller, no one—and nothing—is what it seems.
+                </p>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h1>Movie Adaptation</h1>
+            <iframe class="center" width="700" height="500" src="https://www.youtube.com/embed/J0hTmzISOlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <hr>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="inner_footer">
+                <img src="images/logo.png">
+
+                <div class="footer_third">
+                    <h4>Need help?</h4>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a> 
+                </div>
+
+                <div class="footer_third">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.facebook.com/hai.nguyenngoc.5201254" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/_hai.html_/" target="_blank">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Hotline: +84 37 412 9360</a>
+                </div>
+
+                <div class="footer_third">
+                    <h4>Jump back to:</h4>
+                    <div class="footer_nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-fiction</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

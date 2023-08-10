@@ -1,0 +1,458 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assestment: Assignment 1
+    Author: Nguyen Ngoc Hai
+    ID: s3978281
+    Acknowledgement: 
+-->
+
+<!DOCTYPE html>
+<html>
+<!--This is the homepage-->
+<head>
+    <meta charset="utf-8">
+    <title>The Book Nook</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBOVD591QIYicR65iaqukzvf/nwas FØnqhPay5w/91JmVM2hMDcnK10nMGCdVK+iQrJ71zPJQd1w=="I crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <input type="checkbox" id="check">
+                <ul class="rsps_menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="fiction.html">Fiction</a></li>
+                    <li><a href="nonfiction.html">Non-fiction</a></li>        
+                    <li><label for="check" class="close_menu"><i class="fas fa-times"></i></label></li>            
+                </ul>
+                <label for="check" class="open_menu"><i class="fas fa-bars" style="color: #F2EDD5;"></i></label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="vertical_nav">
+            <ul>
+                <h2><b>Category</b></h2>
+                <li><a href="#Fantasy">Fantasy</a></li>
+                <li><a href="#Thriller">Thriller</a></li>
+                <li><a href="#Romantic">Romantic</a></li>
+            </ul>
+        </div>
+
+        <section>
+            <!--Fantasy-->
+            <div class="cate_books" style="padding-bottom: 0;">
+
+                <h1 id="Fantasy">Fantasy</h1>
+    
+                <div class="book_box">
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/71-++hbbERL._AC_SY879_.jpg" alt="Harry Potter 1">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Harry Potter and the Sorcerer's Stone</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$15.98</p>
+                            <a href="harry_potter_1.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class=" book_img">
+                            <img src="https://m.media-amazon.com/images/I/51-rbiAIiRL._SX341_BO1,204,203,200_.jpg" alt="Harry Potter 3">
+                        </div>
+    
+                        <div class=" book_tag">
+                            <h2>Harry Potter and the Prisoner of Azkaban</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy, Horror</div>
+                            <p class="book_price">$15.74</p>
+                            <a href="harry_potter_3.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/516c41oodRL._SX437_BO1,204,203,200_.jpg" alt="Harry Potter 5">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Harry Potter and the Order of the Phoenix</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$15.50</p>
+                            <a href="harry_potter_5.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51uO1pQc5oL._SX329_BO1,204,203,200_.jpg" alt="Harry Potter 6">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Harry Potter and the Half-Blood Prince</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$16.79</p>
+                            <a href="harry_potter_6.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+            </div>
+    
+        </section>
+        <section>
+            <div class="cate_books" style="padding-top: 0; padding-bottom: 0;">
+
+                <div class="book_box">
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51auVPOrgTL._SX342_BO1,204,203,200_.jpg" alt="Harry Potter 2">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Harry Potter and the Chamber of Secrets</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$21.41</p>
+                            <a href="harry_potter_2.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51E7NvVLO9L._SX346_BO1,204,203,200_.jpg" alt="Harry Potter 7">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Harry Potter and the Deathly Hallows</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$11.49</p>
+                            <a href="harry_potter_7.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51gy+g8Z+1L._SY344_BO1,204,203,200_.jpg" alt="Harry Potter 4">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Harry Potter and the Goblet of Fire</h2>
+                            <p class="writer">- J.K. Rowling -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$18.49</p>
+                            <a href="harry_potter_4.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51HNV1J3UyL._SX331_BO1,204,203,200_.jpg" alt="The Fellowship of the Ring">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>The Fellowship of the Ring (LOFTR 1)</h2>
+                            <p class="writer">- J.R.R. Tolkien -</p>
+                            <div class="categories">Epic high fantasy</div>
+                            <p class="book_price">$9.29</p>
+                            <a href="lotr_1.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="cate_books" style="padding-top: 0; padding-bottom: 0;">
+
+                <div class="book_box">
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/41KmpjMmfjL.jpg" alt="Lord of the Rings 2">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>The Two Towers: Lord of the Rings</h2>
+                            <p class="writer">- J.R.R. Tolkien -</p>
+                            <div class="categories">Epic high fantasy</div>
+                            <p class="book_price">$18.41</p>
+                            <a href="lotr_2.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/41yLFIej6iL.jpg" alt="Lord of the Rings 3">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>The Return of the King (LOTR 3)</h2>
+                            <p class="writer">- J.R.R. Tolkien -</p>
+                            <div class="categories">Epic high fantasy</div>
+                            <p class="book_price">$18.41</p>
+                            <a href="lotr_3.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51v+cufkSOL.jpg" alt="The Horse and His Boy: The Chronicles of Narnia">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>The Horse and His Boy (Special Edition)</h2>
+                            <p class="writer">- Alex Jennings -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$13.95</p>
+                            <a href="the_horse_and_his_boy.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51l5QLhN6PL._SX327_BO1,204,203,200_.jpg" alt="Magnus Chase and the Gods of Asgard">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Magnus Chase and the Gods of Asgard</h2>
+                            <p class="writer">- Rick Riordan -</p>
+                            <div class="categories">Fiction, Fantasy</div>
+                            <p class="book_price">$11.46</p>
+                            <a href="magnus.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+            </div>
+        </section>
+        <section>
+           <div class="cate_books">
+
+                <h1 id="Thriller">Thriller</h1>
+    
+                <div class="book_box">
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/518UXjrLGGL.jpg" alt="The Girl with the Dragon Tattoo">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>The Girl with the Dragon Tattoo</h2>
+                            <p class="writer">- Stieg Larsson -</p>
+                            <div class="categories">Fiction, Thriller</div>
+                            <p class="book_price">$10.79</p>
+                            <a href="the_girl.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class=" book_img">
+                            <img src="https://m.media-amazon.com/images/I/51HPMuVNmVL._SX337_BO1,204,203,200_.jpg" alt="The Silence of the Lambs">
+                        </div>
+    
+                        <div class=" book_tag">
+                            <h2>The Silence of the Lambs (Hannibal Lecter)</h2>
+                            <p class="writer">- Thomas Harris -</p>
+                            <div class="categories">Fiction, Thriller</div>
+                            <p class="book_price">$13.49</p>
+                            <a href="the_silence.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51oZ4pGUvXL.jpg" alt="The Woman in the Window: A Novel">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>The Woman in the Window: A Novel</h2>
+                            <p class="writer">- A. J. Finn -</p>
+                            <div class="categories">Fiction, Thriller</div>
+                            <p class="book_price">$14.10</p>
+                            <a href="the_woman_in_the_window.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/5131KSKXRLL._SX324_BO1,204,203,200_.jpg" alt="All the Dangerous Things: A Novel">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>All the Dangerous Things: A Novel </h2>
+                            <p class="writer">- Stacy Willingham -</p>
+                            <div class="categories">Fiction, Thriller</div>
+                            <p class="book_price">$14.97</p>
+                            <a href="all_the_dangerous_things.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+            </div>
+            
+        </section>  
+
+        <section>
+            <div class="cate_books">
+
+                <h1 id="Romantic">Romantic</h1>
+    
+                <div class="book_box">
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/41+HorgT4YL._SX322_BO1,204,203,200_.jpg" alt="Love in the Time of Cholera">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Love in the Time of Cholera (Paperback)</h2>
+                            <p class="writer">- Gabriel Marquez -</p>
+                            <div class="categories">Fiction, Romantic</div>
+                            <p class="book_price">$9.45</p>
+                            <a href="love_in_the_time.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/41CUMp6BtiL._SX326_BO1,204,203,200_.jpg" alt="The Time Traveler's Wife">
+                        </div>
+    
+                        <div class=" book_tag">
+                            <h2>The Time Traveler's Wife (Paperback)</h2>
+                            <p class="writer">- Audrey Niffenegger -</p>
+                            <div class="categories">Fiction, Fantasy, Horror</div>
+                            <p class="book_price">$15.74</p>
+                            <a href="the_time_traveler.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://d1b14unh5d6w7g.cloudfront.net/194563183X.01.S001.LXXXXXXX.jpg?Expires=1691684764&Signature=WOWi6Anu10a8j9wYFe1CGpy7TGDQfAzl5IWSU0fjDnOqLiPAHxUdTt77wUOpWfPFX2Y6PFbPyS2ZkBzB7TxCJVW-HBeM8VVfxhybg8rs95u0cYqxgD~oUN1CJJiQICy9JybWr24RdfgXrRMC5OTogwIpkHfoRlrokWpOqWmushw_&Key-Pair-Id=APKAIUO27P366FGALUMQ" alt="Things We Never Got Over (Knockemout)">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Things We Never Got Over (Knockemout)</h2>
+                            <p class="writer">- Lucy Score -</p>
+                            <div class="categories">Fiction, Romantic</div>
+                            <p class="book_price">$11.76</p>
+                            <a href="things_we_never_got_over.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+    
+                    <div class="book_card">
+    
+                        <div class="book_img">
+                            <img src="https://m.media-amazon.com/images/I/51YNPg-gCjL._SX322_BO1,204,203,200_.jpg" alt="Fifty Shades Of Grey">
+                        </div>
+    
+                        <div class="book_tag">
+                            <h2>Fifty Shades Of Grey (Series, Book 1)</h2>
+                            <p class="writer">- E L James -</p>
+                            <div class="categories">Fiction, Romantic</div>
+                            <p class="book_price">$13.99</p>
+                            <a href="50_shades.html" class="f_btn">Learn More</a>
+                        </div>               
+    
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="inner_footer">
+                <img src="images/logo.png">
+
+                <div class="footer_third">
+                    <h4>Need help?</h4>
+                    <a href="#">Terms &amp; Conditions</a>
+                    <a href="#">Privacy Policy</a> 
+                </div>
+
+                <div class="footer_third">
+                    <h4>Contact Us</h4>
+                    <a href="https://www.facebook.com/hai.nguyenngoc.5201254" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/_hai.html_/" target="_blank">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Hotline: +84 37 412 9360</a>
+                </div>
+
+                <div class="footer_third">
+                    <h4>Jump back to:</h4>
+                    <div class="footer_nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-fiction</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>

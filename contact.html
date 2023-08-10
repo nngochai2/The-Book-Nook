@@ -1,0 +1,139 @@
+<!--
+    RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023A
+    Assestment: Assignment 1
+    Author: Nguyen Ngoc Hai
+    ID: s3978281
+    Acknowledgement: 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Book Nook</title>
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBOVD591QIYicR65iaqukzvf/nwas FØnqhPay5w/91JmVM2hMDcnK10nMGCdVK+iQrJ71zPJQd1w=="I crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav_bar">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png">
+                        </a>
+                    </div>
+                    <input type="checkbox" id="check">
+                    <ul class="rsps_menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="fiction.html">Fiction</a></li>
+                        <li><a href="nonfiction.html">Non-fiction</a></li>        
+                        <li><label for="check" class="close_menu"><i class="fas fa-times"></i></label></li>            
+                    </ul>
+                    <label for="check" class="open_menu"><i class="fas fa-bars" style="color: #F2EDD5;"></i></label>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contact">
+                <h1>Contact Us</h1>
+                <form action="processing.php" method="get">
+                    <div class="field">
+                        <label for="purpose">Your Purpose: </label>
+                        <select id="purpose" name="purpose">
+                            <option value="selling">I want to sell books.</option>
+                            <option value="buying">I want to buy books</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="name">Your Name: </label>
+                        <input type="text" id="name" name="name" placeholder="Enter your Name">
+                    </div>
+                    <div class="field">
+                        <label for="phone">Your Number:</label> 
+                        <input type="text" id="phone" name="phone" placeholder="Enter your phone number"></input>
+                    </div>
+                    <div class="field">
+                        <label for="mail">Your Email: </label>
+                        <input type="text" id="mail" name="mail" placeholder="Enter your Email">
+                    </div>
+                    <div class="field">
+                        <p>Contact Preference:</p>
+                        <div class="pref">
+                            <input type="checkbox" id="by_email" name="pref" value="by email">
+                            <label for="by_email">By Email</label>
+                        </div>
+                        <div class="pref">
+                            <input type="checkbox" id="by_phone" name="pref" value="by phone">
+                            <label for="by_phone">By Phone</label>
+                        </div>                            
+                    </div>
+                    <div class="field" id="radio">
+                        <p>Receive Weekly Newsletter: </p>
+                        <div class="newsletter">
+                            <input type="radio" id="yes" name="newsletter" value="yes" checked>
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="newsletter">
+                            <input type="radio" id="no" name="newsletter" value="no">
+                            <label for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="note">Extra Notes: </label>
+                        <input type="text" id="note" name="note" placeholder="Put your extra note here">
+                    </div>
+                    <div class="buttons">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="inner_footer">
+                    <img src="images/logo.png">
+    
+                    <div class="footer_third">
+                        <h4>Need help?</h4>
+                        <a href="#">Terms &amp; Conditions</a>
+                        <a href="#">Privacy Policy</a> 
+                    </div>
+    
+                    <div class="footer_third">
+                        <h4>Contact Us</h4>
+                        <a href="https://www.facebook.com/hai.nguyenngoc.5201254" target="_blank">Facebook</a>
+                        <a href="https://www.instagram.com/_hai.html_/" target="_blank">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Hotline: +84 37 412 9360</a>
+                    </div>
+    
+                    <div class="footer_third">
+                        <h4>Jump back to:</h4>
+                        <div class="footer_nav">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="fiction.html">Fiction</a></li>
+                            <li><a href="nonfiction.html">Non-fiction</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>        
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

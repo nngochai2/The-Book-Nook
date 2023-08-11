@@ -1,11 +1,11 @@
 /*
     RMIT University Vietnam
     Course: COSC2430 Web Programming
-    Semester: 2023A
+    Semester: 2023B
     Assestment: Assignment 1
     Author: Nguyen Ngoc Hai
     ID: s3978281
-    Acknowledgement: 
+    Acknowledgement: The website use icons from Font-Awesome 5, pictures from amazon.com and fonts fonts.google.com
 */
 * {
     padding: 0;
@@ -313,6 +313,8 @@ nav ul {
     text-decoration: none;
     color: #853760;
 }
+
+.c
 
 .cate_books .book_box{
     display: flex;

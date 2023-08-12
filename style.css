@@ -675,25 +675,6 @@ nav ul {
     color: #853760;
 }
 
-@media (min-width: 1920px) {
-    .books .book_box .book_card {
-        display: flex;
-        flex-direction: column;
-        width: 12%;
-        height: 40rem;
-        text-align: center;
-        padding: 4px;
-        border: 3px solid #BFBD99;
-        /* margin: 10px 20px; */
-        background-color: #F2EDD5;
-    }    
-
-    .books .book_box .book_card .book_img img{
-        width: 97%;
-        height: 29rem;
-    }
-}
-
 @media (max-width: 1448px) {
     .books .book_box {
       flex-wrap: wrap;
